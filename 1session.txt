@@ -1,0 +1,1 @@
+-cpu=central procesing unit
