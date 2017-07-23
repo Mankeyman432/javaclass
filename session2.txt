@@ -1,0 +1,13 @@
+-We have defined bit which is one binary digit , smallest data in computer system and can take either 0 or 1. 2 bits can carry 4 values which are 00(0), 01(1), 10(2), 11(3).
+-If you see above 8 bits can carry 256 values which are plenty for alphabets+numbers+other characters. All ASCII can fit in to these 256 values. Earlier computers grouped 8 bits and called as Byte.
+-As computer is our tool to develop programs, we need to know the details of our computer. We will be learning some basic details and in the future we will be learning some advanced concepts and also other operating systems like OSX , Linux etc.,
+-File is group of bytes.
+-There are different types of files in windows .txt is text file which you can create using notepad.exe
+-Executable (.exe) is a programs.
+-Some of the executables in windows are notepad.exe (creating text files), cmd.exe (command prompt where you can type windows command), chome.exe (browser) , calc.exe (calculator).
+-There are .png, .jpg picture files, .mp4 videos, .html (HTML files).
+-Folder is collection of files and also can contain folders.
+-Eclipse is diffrent kind of program where it is used to develop again programs compared to other programs like notepad, calc where we use them. Thats why we call them as IDE (I nteractive D evelopment E nvironment).
+-When you have millions of instructions ( typical program may contain lot of instructions).
+- Program simply starts from main and follows whatever you have asked to do and in above case the instruction is print and the data is Hello World.
+-We will learn data types and how this program is converted in to actual binary (remember computer CPU, RAM understands binary not the english you type.).
