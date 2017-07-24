@@ -1,0 +1,64 @@
+-Git is version control system.
+-It will be used as central place to add and view our individual notes and projects.
+-It will used for notes,exercises and any quizs.
+-Get repository to your local machine
+-A repository is collection of files ( can contain folders)
+-go to github.com and login and go to repository
+-for example a repository basicjava for my account will be https://github.com/sairamaj/basicjava.git (see the pattern here)
+-https
+-github.com
+-account name ( here sairamaj is my account)
+-repository name (basicjava)
+-.git
+-you can get this information from on your local machine go to command prompt and type the following command.
+-cd \
+-md gitlearn
+-cd gitlearn
+-git clone url
+ 
+Adding new files
+-type notepad session3.txt
+-in notepad type your own notes
+-use File->Save option to save
+-Quit the notepad
+-now type git status this command will show any changes done in red color indicating some changes you have done.
+-type git add * to add these files to your local git (note: you are files on local machine still)
+-next type git status again to see all the files are shown in green.
+-type git commit -m "some comment" This will put in to local git ( again your files are still in on your machine)
+-type git push origin mast
+-type notepad session3.txt
+-in notepad type your own notes
+-use File->Save option to save
+-Quit the notepad
+-now type git status this command will show any changes done in red color indicating some changes you have done.
+-type git add * to add these files to your local git (note: you are files on local machine still)
+-next type git status again to see all the files are shown in green.
+-type git commit -m "some comment" This will put in to local git ( again your files are still in on your machine)
+-type git push origin master to finally push these changes to your github account.
+
+Modifying the files
+
+-open command prompt
+-cd \
+-cd gitlearn\basicjava
+-notepad session3.txt
+-modify with new notes
+-File->Save
+-quit notepad
+-git status
+-git add *
+-git commit -m "comment"
+-git push origin master
+
+Deleting the files
+-use del command ( or use file explorer)
+-repeat the above git commands
+
+
+command                                    description
+
+
+git status                          shows the status of any additions/modifications/deletions 
+git add *                           adds the files to local 
+git commit -m"some comment'         commits to local repository 
+git push origin master              finally they are in your github account 
