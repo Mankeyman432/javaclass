@@ -1,0 +1,45 @@
+-Import java.util.Scanner;
+
+  public class Application {
+	public static void main(String[] args) {
+		System.out.print("first number:");
+		Scanner scanner = new Scanner(System.in);
+		int firstNumber = scanner.nextInt();
+		
+		System.out.print("second number:");
+		int secondNumber = scanner.nextInt();
+	}
+}
+
+-In above we are declaring variable scanner of type Scanner ( we will learn in future about these data types). From variable scanner you can call method nextInt() to get user input. Don't worry about these lines as we will learn what exactly they mean in future classes.
+
+Steps involved in writing program
+
+Step 1
+
+-Understand what the program is supposed to do. This is very important and called requirements in real software. Have a mental picture how the working program will look like even if you have no idea how you are going to write it.
+
+Step 2
+
+-Forget about the the whole program
+-Take some data and run through your mind
+-Now start putting in program
+
+Another conditional program
+
+-What is the value of 5/2? . It can be either 2.5 or 2 based on data types
+-x/y will get 2 and x1/y1 will get 2.5
+-This operator % will determind the reminder to see if it is even or odd
+
+Program using for loop
+
+Requirement
+
+-Program should able to take a number from user and should print multiplication table up to 10
+
+Actual program logic
+
+-the first part of for is start with i=1
+-Second part is the condition evaluates true, then loop run number <= 10
+-Next is body of the for
+-The final program will be printing the answer
