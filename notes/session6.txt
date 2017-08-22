@@ -1,0 +1,56 @@
+Your own data types
+
+-You can define your own data type using basic data types
+-Then name it like preson or car
+-Then after that you define what you want in the data type like if it was a person it would be int age,string name;int grade;int height; int weight;etc
+-Now the data type is complete
+
+Using this your data type
+
+-Person person1; here the data type is Person and variable is Person1
+-There is a slight difference in assigning values to this variable
+-Regular data type like Int or string you have to use = and then the value
+-But for the data you have created Ex= Person person1 -new Person(); =new data type
+-new is the keyword and you are saying to Java that I want to create new value
+-Now you can assign individual parts of Person (age,name,grade,height,weight) using . (dot) like below
+-Person person1 = new Person();
+-person1.age = 20;
+-person1.name = "sai";
+-person1.grade = 7;
+-person1.height = 5;
+-person1.weight = 100;
+
+-In order to use the variable for printing you use the same way like below
+ -System.out.println( person1.name + " age is:" + person1.age);
+Complete Program
+
+-Open Eclpse
+-Create Java project called MyOwnDataSample
+-Create class called Application.java and make sure that public static void main() check mark is checked.
+-Print line using System.out to say learning data sample
+-System.out.println("learning my own data type");
+-Run the program and make sure that it prints.
+-At this time we are ready to add our own data type
+-File->New->Class and name Person
+-Make sure that public static void main() is unchecked ( this is the difference between when you have created Application class where you have checked it and this class where you uncheck. The reason is our Java project is going to have 2 classes but only one class needs to have main method so that when you run, the program starts from first instructions in main)
+-In newly created Person class input the following
+class Person{
+        String name;
+        int age;
+        int grade;
+        int height;
+        int weight;
+    }
+-Now in Application class after System.out.println
+Person person1 = new Person();
+    person1.name = "sai1";
+    person1.age = 12;
+    
+    Person person2 = new Person();
+    person1.name = "sai2";
+    person1.age = 15;
+
+    System.out.println(person1.name + " age is:" + person1.age);
+    System.out.println(person2.name + " age is:" + person2.age);
+-Run the program you should see sai1 age is:12 sai2 age is:15
+-In above we have 2 persons with different values
