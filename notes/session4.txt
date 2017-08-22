@@ -1,0 +1,13 @@
+Data Types
+
+-The concept of variable is same in Java programming
+-In Java programming the sets below are given specific name and thats what we call them data types
+-Int (14,10) -> Numbers without decimals
+-String ("sairama", "Tucson")
+-Double (24.50, 2.5) -> Numbers with decimals
+
+Syntax
+-Syntax is grammar to programming
+
+If statement
+In real life you get different paths based on certain conditions
