@@ -1,0 +1,190 @@
+Syntax
+
+-Syntax is very important when you learning programming
+
+if
+
+-If you are comfortable with syntax, it makes easy to correct compilation errors and concentrate on logical programming. There is only little syntax int basic java to learn
+-if followed by opening and closing parenthesis () and then code block {}
+-if( condition which can say true/false (yes or no)){} like // programming statements, // like System.out.println and // some statements like x = x+2
+-condition returns true/false (says yes/no) like x>0 ( true if the variable x is greater than 0. ex: x 10 then true , x -2 then false) 
+-x>0 && y<10 ( x should be greater than zero and y should be less than 10 then only it is true)
+x	y	condition
+5	4	true
+5	15	false
+
+-x>0 || y<10 ( x should be greater than zero or y should be less than 10 then only it is true)
+x	y	condition
+5	4	true
+5	14	true
+0	5	true
+0	15	false
+
+else if, else 
+
+-follows the same principle as if
+
+for
+
+-Used for repetition
+-for followed by () , followed by code block {} , () contains 3 logical blocks separated by ;
+
+Custom data type ( class)
+
+-lass followed by yourdatatypename and then code block
+
+Custom data type ( class)
+
+-You can fill properties in the class just like any other variables you define
+
+Using custom data type
+
+-Syntax is datatype followed by variableName = new keyword and then datatype and followed by ()
+
+Class, Object, Instance
+
+-We have learned creating our data types with keyword as class and creating variable
+-The technical term for creating our data type in Java is class and creating variable for this data type is called object or instance
+-Class as template or cookie cutter or recipe or blueprint. Just like you create cookies with a cookie cutter , we create objects with class
+
+Actions/Methods/Functions/Behavior
+
+-When we have described a person like below 
+class Person{
+String name;
+int age;
+int grade;
+
+-We have mentioned about a person will have name,age and grade 
+-But what we are missing is some behavior associated with person
+-We also say what he/she can do also
+-EX:a person can Play, Read Books, Jog for every day , does some programming etc., If you observe these they are all actions a person can do.
+
+Action
+
+-run
+-run for 10 miles
+-get coffee
+-take money and get coffee
+-The actions above are things we do in really life
+-If you observe these actions can be grouped in to following categories
+
+-Actions wont' take anything and does not give back anything
+  -run, read, jog, play ( action: run, read, jog, play)
+
+-Actions take some inputs but does not give anything back
+  -run 10 miles ( action is run and input is 10 miles)
+
+-Action does not take anything but give back
+  -Tell me how many miles you have run today ( action is: tell miles you have run and output : miles ran)
+
+-Action take some input and also give back some output
+  -If you go to Starbucks they take money and give coffee ( action is: get coffee, input: money , output: coffee)
+
+
+
+example	                       action	                input	    output
+run	                         run	                none	     none
+read"Harry Potter" book	        read	        "Harry Potter" book  none
+tell me miles you ran	tell miles you ran	         none	number of miles ran
+take money get coffee	     get coffee	                 money      coffee
+
+Actions in programming
+
+-Lets define these actions in Java programming.
+ 
+      class Person{
+        // no input
+        // no output
+        void run(){
+
+        }
+
+        // input : bookName
+        // output: none
+        void readBook(String bookName){
+
+        }
+
+        // input: none
+        // output: miles ran
+        int tellMeMilesRanToday(){
+            return 10;
+        }
+
+        // input: money
+        // output: coffee
+        String getCoffee(int money){
+            return "latte";
+        }
+    }
+
+
+
+
+Calculator sample
+-Lets define some examples by building a calculator class
+-Create Java project with name as CalculatorSample
+-Add class Application (check public static void main check mark as this is the class will have main method)
+-Add class Calculator ( uncheck public stati void main check box as this class will not have main). (Only one class should have main and you know why. When you run a program java starts from main function )
+-Fill the class like below
+
+ class Calculator{
+        int add(int x, int y){
+            int z;
+            z = x+y;
+            return z;
+        }
+
+        int sub(int x, int y){
+            int z;
+            z = x-y;
+            return z;
+        }
+    }
+
+-Add method takes two inputs x and y and outputs (returns) of data type int and it does addition
+
+How to use this action
+
+-In order to use this method we have to create object
+-In Application class and in main method
+
+    Calculator c = new Calculator(); 
+    int sum; 
+    sum = c.add(2,3);
+    System.out.println(sum);
+-above after creating object we call method with dot(.) operator
+-When a action returns (outputs) something, then you can take this output with a variable like below
+sum = c.add(2,3);
+-You need to declare sum variable before this (the data type of this variable is nothing but what action is returning. In above case add is returning of type int and hence the sum has to be int)\
+
+Scope
+
+-In methods add declares variable z and this variable is alive when it was declared and dead after the end of }
+-The variable z declared in sub is totally different and hence we had declared again. The z variable is no longer available after the return statement. This is called variable scoping
+ class Calculator{
+        int add(int x, int y){
+            int z;
+            z = x+y;
+            return z;
+        }
+
+        int sub(int x, int y){
+            int z;
+            z = x-y;
+            return z;
+        }
+    }
+
+Summary
+
+-Syntax is important ( try understanding it and practice it.)
+-Custom data type technical term is class
+-Variable for custom data type is nothing but object ( also instance)
+-Class is Singular Noun ( ex: Person)
+-Class in Java starts with Uppercase
+-Action in class describe the behavior
+-They are called method ( also function)
+-They start with lower case ( run, readBook)
+-Scoping meaning the variable declared in a code block is alive and dead between { and }
